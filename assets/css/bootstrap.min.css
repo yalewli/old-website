@@ -5657,7 +5657,11 @@ a.bg-dark:hover {
 }
 
 .rounded-circle {
-    border-radius: 50%
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /*background-size:cover*/
 }
 
 .rounded-0 {
