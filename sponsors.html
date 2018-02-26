@@ -77,47 +77,33 @@
                 <div class="col-md-10 ml-auto mr-auto">
                     <div class="row collections">
                         <div class="col-md-6">
-                            <img src="assets/img/capitalone.jpg" class="img-raised">
-                            <img src="assets/img/mckinsey.jpg" vspace=30 alt="" class="img-raised">
+                            <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,q_75,w_500/v1519603513/sponsor/capitalone.jpg" class="img-raised">
+                            <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,q_75,w_500/v1519603585/sponsor/mckinsey.jpg" vspace=30 alt="" class="img-raised">
                         </div>
                         <div class="col-md-6">
-                            <img src="assets/img/facebook.png" alt="" class="img-raised">
-                            <img src="assets/img/hines.png" vspace=30 alt="" class="img-raised">
+                            <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,q_75,w_500/v1519603529/sponsor/facebook.png" alt="" class="img-raised">
+                            <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,q_75,w_500/v1519603588/sponsor/hines.png" vspace=30 alt="" class="img-raised">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
         <footer class="footer footer-default">
             <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/yalewli/">
-                                Yale WLI
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Email
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/yale-women-s-leadership-initiative-916677104/">
-                                Linkedin
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Yale Women's Leadership Initiative
+                    &copy; <span id="copy-year"></span>, Yale Women's Leadership Initiative
                 </div>
             </div>
         </footer>
     </div>
+
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById("copy-year").innerHTML = year;
+</script>
+
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>

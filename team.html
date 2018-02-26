@@ -1,3 +1,5 @@
+<!-- look into CMS stuff and masking front end stuff, what does the wrapper do? make README, navbar situation, CSS -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,21 +83,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/chelsea.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603172/team/guo_c.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Chelsea Guo</h4>
                                 <p class="category text-primary">President</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/kendall.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603334/team/schmidt_k.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Kendall Schmidt</h4>
                                 <p class="category text-primary">Co Vice President</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/karen.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603302/team/yang_k.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Karen Yang</h4>
                                 <p class="category text-primary">Co Vice President</p>
                             </div>
@@ -104,21 +106,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/isabella.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603249/team/teng_i.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Isabella Teng</h4>
                                 <p class="category text-primary">Co Business Manager</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/genna.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603210/team/abele_g.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Genna Abele</h4>
                                 <p class="category text-primary">Co Business Manager</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="team-player">
-                                <img src="assets/img/tasnim.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603368/team/mollah_t.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                 <h4 class="title">Tasnim Mollah</h4>
                                 <p class="category text-primary">Co Conference Chair</p>
                             </div>
@@ -127,14 +129,14 @@
                     <div class="row">
                       <div class="col-md-4">
                           <div class="team-player">
-                              <img src="assets/img/valerie.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                              <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519603390/team/chen_v.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                               <h4 class="title">Valerie Chen</h4>
                               <p class="category text-primary">Co Conference Chair</p>
                           </div>
                       </div>
                       <div class="col-md-4">
                           <div class="team-player">
-                              <img src="assets/img/adrianne.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                              <img src="http://res.cloudinary.com/yalewli/image/upload/c_scale,h_400,q_100/v1519602907/team/owings_a.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                               <h4 class="title">Adrianne Owings</h4>
                               <p class="category text-primary">Leading Ladies Director</p>
                           </div>
@@ -143,36 +145,22 @@
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
         <footer class="footer footer-default">
             <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/yalewli/">
-                                Yale WLI
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Email
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/yale-women-s-leadership-initiative-916677104/">
-                                Linkedin
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Yale Women's Leadership Initiative
+                    &copy; <span id="copy-year"></span>, Yale Women's Leadership Initiative
                 </div>
             </div>
         </footer>
     </div>
+
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById("copy-year").innerHTML = year;
+</script>
+
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>

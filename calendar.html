@@ -79,37 +79,21 @@
         </div>
       </div>
 
+        <!-- Footer -->
+        <footer class="footer footer-default">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <span id="copy-year"></span>, Yale Women's Leadership Initiative
+                </div>
+            </div>
+        </footer>
+    </div>
 
-      <footer class="footer footer-default">
-          <div class="container">
-              <nav>
-                  <ul>
-                      <li>
-                          <a href="https://www.facebook.com/yalewli/">
-                              Yale WLI
-                          </a>
-                      </li>
-                      <li>
-                          <a href="">
-                              Email
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://www.linkedin.com/in/yale-women-s-leadership-initiative-916677104/">
-                              Linkedin
-                          </a>
-                      </li>
-                  </ul>
-              </nav>
-              <div class="copyright">
-                  &copy;
-                  <script>
-                      document.write(new Date().getFullYear())
-                  </script>, Yale Women's Leadership Initiative
-              </div>
-          </div>
-      </footer>
-  </div>
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById("copy-year").innerHTML = year;
+</script>
+
 </body>
 
 <!--   Core JS Files   -->
