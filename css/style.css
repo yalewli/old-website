@@ -1,0 +1,26 @@
+.my-button {
+	background-color: #5BA38D;
+	border: none;
+	padding: 12px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	font-size: 13pt;
+	font-family: "Montserrat";
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#mc_embed_signup {
+	font-size: 14pt;
+}
+
+.section h2 {
+	color: #004656
+}
+
+.nav-hamb {
+	width: 40px;
+}
