@@ -1,3 +1,12 @@
+.brand-img {
+	width: 50px;
+}
+
+.nav-title {
+	font-size: 16pt !important;
+	font-family: "Helvetica" !important;
+}
+
 .my-button {
 	background-color: #5BA38D;
 	border: none;
@@ -23,4 +32,26 @@
 
 .nav-hamb {
 	width: 40px;
+}
+
+.sponsor-pics img{
+	border: 10px solid #FFFFFF;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	filter: grayscale(1);
+}
+
+.sponsor-pics img:hover {
+	filter: none;
+	cursor: pointer
+}
+
+.top-sponsors img{
+	padding-bottom: 0px;
+}
+
+.sec-sponsors img {
+	padding-top: 0px;
 }
