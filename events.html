@@ -23,35 +23,37 @@
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-transparent" color-on-scroll="300">
         <div class="container">
-            <!-- FIX DIS BISH LOOKUP -->
-            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="assets/img/blurred-image-1.jpg">
-                <ul class="navbar-nav">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="index.html">
+                    Yale Women's Leadership Initiative
+                </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <div class="justify-content-end">
+                <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" target="_self">Events</a>
+                        <a class="nav-link" href="team.html">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html" target="_self">Team</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html" target="_self">Sponsors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/yalewli/?ref=br_rs" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:womensleadershipinitiative@gmail.com" target="_blank">
-                            <i class="fa fa-envelope-open-o"></i>
-                        </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="contactDropdown" data-toggle="dropdown" aria-expanded="false" href="#">Contact</a>
+                        <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="students.html">Students</a>
+                            <a class="dropdown-item" href="sponsors.html">Sponsors</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -68,15 +70,29 @@
                 </div>
             </div>
         </div>
-        <div class="section section-about text-center">
+
+        <div class="section section-about">
             <div class="container">
-                <h2 class="title">Leading Ladies' Gala</h2>
                 <h5 class="description">
-                    Founded in 2013, the annual <a href= "https://www.facebook.com/yaleleadingladies/">Leading Ladies Gala</a> is one of WLI's signature events for the fall semester. It was established to recognize the achievements of outstanding undergraduate female leaders at Yale. It aims to bring together 200+ Yale undergraduates, alumnae, faculty, and guest speakers annually to engage in a spectacular celebration of female leadership on campus and beyond.
+                    <!-- maybe a different blurb -->
+                    We hold events throughout the year to support our mission of empowering women. In the fall semester we hold our <a href="#LLG">Leading Ladies' Gala</a>, in the beginning of the spring semester we hold our <a href="#WEC">Women Empowering (WE) Conference</a>, and we bring guest speakers to Yale throughout the year as part of our <a href="#SW">Speakers and Workshops</a> program.
                 </h5>
             </div>
         </div>
-        <div class="section section-about text-center">
+
+        <!-- Leading Ladies' Gala -->
+        <!-- add text-center to div for centered text -->
+        <div id="LLG" class="section section-about">
+            <div class="container">
+                <h2 class="title">Leading Ladies' Gala</h2>
+                <h5 class="description">
+                    Our signature event of the fall semester recognizes the achievements of outstanding undergraduate female leaders at Yale. We bring over 200 undergraduates, alumnae, faculty, and guest speakers annually to engage in a spectacular celebration of female leadership on campus and beyond.
+                </h5>
+            </div>
+        </div>
+
+        <!-- W.E. Conference -->
+        <div id="WEC" class="section section-about">
             <div class="container">
                 <h2 class="title">W.E. Conference</h2>
                 <h5 class="description">
@@ -87,9 +103,20 @@
                 </h5>
             </div>
         </div>
+
+        <!-- Speakers and Workshops -->
+        <div id="SW" class="section section-about">
+            <div class="container">
+                <h2 class="title">Speaker and Workshops</h2>
+                <h5 class="description">
+                    The Speakers and Workshops program brings students and industry leaders together in engaging conversations about female leadership. Often held in the cozy setting of college common rooms, our unique events allow students to understand leadership in its different forms through discussions and Q&As. Below are just some of the speaker events we hosted this past year.
+                </h5>
+            </div>
+        </div>
+
         <div class="section section-calendar text-center">
             <div class="container">
-                <div class="col-md-10 ml-auto mr-auto">
+                <div class="row">
                     <h2 class="title">Events Calendar</h2> 
                     <iframe src="https://calendar.google.com/calendar/b/2/embed?title=Women%27s%20Leadership%20Initiative&amp;height=900&amp;wkst=1&amp;bgcolor=%23ccffff&amp;src=womensleadershipinitiative%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
@@ -99,8 +126,16 @@
         <!-- Footer -->
         <footer class="footer footer-default">
             <div class="container">
+                <div class="pull-left">
+                    <a href="index.html">
+                        <img class="foot-logo" src="assets/img/logo-trans.png">
+                    </a>
+                </div>
                 <div class="copyright">
-                    &copy; <span id="copy-year"></span>, Yale Women's Leadership Initiative
+                    &copy; <span id="copy-year"></span>, Yale Women's Leadership Initiative<br>
+                    <a href="mailto:womensleadershipinitiative@gmail.com" class="foot-email">
+                        womensleadershipinitiative@gmail.com
+                    </a>
                 </div>
             </div>
         </footer>

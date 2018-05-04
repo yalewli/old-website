@@ -1,11 +1,10 @@
-.brand-img {
-	width: 50px;
+/* General */
+
+.section h2 {
+	color: #004656
 }
 
-.nav-title {
-	font-size: 16pt !important;
-	font-family: "Helvetica" !important;
-}
+	/* Buttons */
 
 .my-button {
 	background-color: #5BA38D;
@@ -22,17 +21,57 @@
 	border-radius: 50px;
 }
 
+	/* Subscribe */
+
 #mc_embed_signup {
 	font-size: 14pt;
 }
 
-.section h2 {
-	color: #004656
+/* Navbar */
+
+.dropdown-menu {
+	opacity: 0.9 !important;
 }
 
-.nav-hamb {
-	width: 40px;
+.nav-link {
+	font-size: 9pt !important;
 }
+
+.dropdown-item {
+	font-size: 10pt !important;
+}
+
+/* Footer */
+
+.foot-logo {
+	height: 30px;
+}
+
+.foot-logo:hover{
+	cursor: pointer;
+}
+
+.foot-email:hover{
+	text-decoration: underline;
+}
+
+/* Home */
+
+.index-title {
+	color: #66CDAA;
+}
+
+.splash {
+	/*margin-top: 40%*/;
+}
+
+.index-img {
+	width: 80px;
+	background-color: white;
+	border-radius: 40px;
+}
+
+/* Sponsor */
 
 .sponsor-pics img{
 	border: 10px solid #FFFFFF;
@@ -54,4 +93,28 @@
 
 .sec-sponsors img {
 	padding-top: 0px;
+}
+
+/* Unused */
+
+.carousel-inner .carousel-item {
+	transition: -webkit-transform 1s ease;
+	transition: transform 1s ease;
+	data-interval: false;
+	data-ride: false;
+}
+
+.nav-title {
+	font-size: 16pt !important;
+	font-family: "Helvetica" !important;
+}
+
+.nav-hamb {
+	width: 40px;
+}
+
+.down-arrow {
+    -webkit-transition-delay: .75s;
+    -moz-transition-delay: .75s;
+    transition-delay: .75s
 }
