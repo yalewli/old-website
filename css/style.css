@@ -61,15 +61,36 @@
 	color: #66CDAA;
 }
 
-.splash {
-	/*margin-top: 40%*/;
+.index-content {
+	padding-top: 15%;
 }
 
 .index-img {
-	width: 80px;
+	width: 90px;
 	background-color: white;
-	border-radius: 40px;
+	border-radius: 50%;
 }
+
+.white-link a {
+	color: white;
+}
+
+.white-link a:hover {
+	color: white;
+}
+
+.white-link p {
+	font-size: 12pt;
+}
+
+/*.click-sponsors {
+	font-size: 12pt;
+	padding-top: 15%;
+}
+
+.arrow {
+	height: 10pt;
+}*/
 
 /* Sponsor */
 
